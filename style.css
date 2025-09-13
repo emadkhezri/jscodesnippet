@@ -58,6 +58,7 @@ textarea {
     color: transparent;
     caret-color: white;
     background-color: transparent;
+    border: none;
     outline: none;
     resize: none;
     overflow: auto;
