@@ -13,13 +13,18 @@
         <div class="code-section">
             <div class="code-window-header">code.js</div>
             <div class="code-edit">
+                <pre><code id="codePreview" class="language-javascript"></code></pre>
                 <textarea id="codeInput" placeholder="Enter your code here..."></textarea>
             </div>
         </div>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
     <script>
-        hljs.highlightAll();
+        var codeInput = document.getElementById("codeInput");
+        var codePreview = document.getElementById("codePreview");
+        codeInput.addEventListener("input", function() {
+        codePreview.innerHTML = hljs.highlight(codeInput.value, { language: "javascript" }).value;
+        });
     </script>
 </body>
 

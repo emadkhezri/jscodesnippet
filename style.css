@@ -50,18 +50,25 @@ body {
     display: grid;
     flex-grow: 1;
     color: white;
-    padding: 5%;
+    border: 3px solid red;
 }
 
 textarea {
     color: white;
     background-color: transparent;
-    border: none;
+    border: 2px solid white;
     outline: none;
     resize: none;
     overflow: auto;
     width: 100%;
     height: 100%;
     font-family: monospace;
-    padding: 10px;
+    box-sizing: border-box;
+    padding: 2% 5%;
+}
+
+pre {
+    white-space: pre-wrap;
+    border: 4px solid yellow;
+    font-size: small;
 }
