@@ -2,22 +2,27 @@
 <html lang="en">
 
 <head>
-    <title>Beatiful Code Share!</title>
+    <title>Beautiful Code Share!</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/atom-one-dark.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 </head>
 
 <body>
+    <div class="banner">
+        <h1>Beatiful Code Share</h1>
+    </div>
     <div class="main-container">
         <div class="code-section">
             <div class="code-window-header">code.js</div>
             <div class="code-edit">
-                <pre id="codePreview" class="language-javascript"></pre>
+                <pre spellcheck="false" id="codePreview" class="language-javascript"></pre>
                 <textarea id="codeInput" placeholder="Enter your code here..."></textarea>
             </div>
         </div>
     </div>
+    <div class="footer"></div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
     <script>
         var codeInput = document.getElementById("codeInput");
