@@ -43,13 +43,14 @@ body {
     background-color: rgba(45, 51, 63, 0.9);
     color: rgb(189, 188, 188);
     font-size: small;
-    height: 30px;
+    min-height: 30px;
 }
 
 .code-edit {
     display: grid;
     flex-grow: 1;
     color: white;
+    overflow: auto;
 }
 
 textarea {
