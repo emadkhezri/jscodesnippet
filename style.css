@@ -47,6 +47,29 @@ body {
     box-shadow: 0px 0px 100px black;
 }
 
+.copy-download-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 5%;
+}
+
+.button {
+    background-color:#9198e5;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.button:hover {
+    background-color: #e66465;
+    outline: 3px solid white;
+}
+
+.button:active {
+    background-color: gray;
+}
+
+
 .code-section {
     display: flex;
     flex-direction: column;
