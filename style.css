@@ -3,7 +3,7 @@
 }
 
 body {
-    background-color:white;
+    background-color: white;
 }
 
 body {
@@ -25,19 +25,25 @@ body {
     align-items: center;
 }
 
-.banner h1, .banner span {
+.banner h1,
+.banner span {
     color: black;
     font-size: 30px;
     font-family: Helvetica, Verdana, Geneva;
 }
 
 .banner span {
-    font-weight:100;
+    font-weight: 100;
 }
 
 .tagline {
     color: grey;
     font-size: 15px;
+}
+
+.middle {
+    display: flex;
+    gap: 20px;
 }
 
 .footer {
@@ -49,7 +55,7 @@ body {
     flex-grow: 1;
     background-image: linear-gradient(#e66465, #9198e5);
     height: 500px;
-    width: 800px;
+    width: 700px;
     border-radius: 2%;
     align-items: center;
     justify-content: center;
@@ -57,28 +63,69 @@ body {
     box-shadow: 5px 10px 30px gray;
 }
 
-.copy-download-buttons {
+.toolbar {
     display: flex;
-    justify-content: center;
-    gap: 30px;
-    padding: 5%;
+    flex-direction: column;
 }
 
-.button {
-    background-color:#9198e5;
+.bgcolor-toolbar {
+    background-color: white;
+    box-shadow: 0px 0px 20px rgb(189, 189, 189);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 15px;
     padding: 10px;
-    border-radius: 10px;
+    border-radius: 50px;
 }
 
-.button:hover {
-    background-color: #e66465;
-    outline: 3px solid white;
+.bgcolor-selector {
+    padding: 15px;
+    box-sizing: border-box;
+    border-radius: 50px;
 }
 
-.button:active {
-    background-color: gray;
+.gradient1 {
+    /* outline: 3px solid gray; */
+    background: #b92b27;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #1565C0, #b92b27);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #1565C0, #b92b27);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
+.gradient2 {
+    background: #f12711;
+    background: -webkit-linear-gradient(to bottom, #f5af19, #f12711);
+    background: linear-gradient(to bottom, #f5af19, #f12711);
+}
+
+.gradient3 {
+    background: #11998e;
+    background: -webkit-linear-gradient(to bottom, #38ef7d, #11998e);
+    background: linear-gradient(to bottom, #38ef7d, #11998e);
+}
+
+.gradient4 {
+    background: #3E5151;
+    background: -webkit-linear-gradient(to bottom, #DECBA4, #3E5151);
+    background: linear-gradient(to bottom, #DECBA4, #3E5151);
+}
+
+.gradient5 {
+    background: #373B44;
+    background: -webkit-linear-gradient(to bottom, #4286f4, #373B44);
+    background: linear-gradient(to bottom, #4286f4, #373B44);
+}
+
+.gradient6 {
+    background: #FFE000;
+    background: -webkit-linear-gradient(to bottom, #799F0C, #FFE000);
+    background: linear-gradient(to bottom, #799F0C, #FFE000);
+
+}
 
 .code-section {
     display: flex;
@@ -122,7 +169,8 @@ textarea {
     box-sizing: border-box;
 }
 
-textarea, pre {
+textarea,
+pre {
     margin: 0;
     grid-column-start: 1;
     grid-row-start: 1;
