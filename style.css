@@ -3,7 +3,7 @@
 }
 
 body {
-    background-color:#374151;
+    background-color:white;
 }
 
 body {
@@ -18,17 +18,26 @@ body {
 
 .banner {
     display: flex;
+    flex-direction: column;
     flex-grow: 0;
-    min-height: 250px;
+    min-height: 200px;
     justify-content: center;
     align-items: center;
 }
 
-.banner h1 {
-    color: white;
-    font-size: 60px;
-    font-weight: 200;
+.banner h1, .banner span {
+    color: black;
+    font-size: 30px;
     font-family: Helvetica, Verdana, Geneva;
+}
+
+.banner span {
+    font-weight:100;
+}
+
+.tagline {
+    color: grey;
+    font-size: 15px;
 }
 
 .footer {
@@ -41,10 +50,11 @@ body {
     background-image: linear-gradient(#e66465, #9198e5);
     height: 500px;
     width: 800px;
-    border-radius: 3%;
+    border-radius: 2%;
     align-items: center;
     justify-content: center;
-    box-shadow: 0px 0px 100px black;
+    outline: 2px solid white;
+    box-shadow: 5px 10px 30px gray;
 }
 
 .copy-download-buttons {
