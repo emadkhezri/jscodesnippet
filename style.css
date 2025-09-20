@@ -3,7 +3,12 @@
 }
 
 body {
-    background-color: white;
+    background: #ADA996;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 body {
@@ -48,6 +53,11 @@ body {
 
 .footer {
     min-height: 250px;
+    display: flex;
+    align-items: flex-end;
+    gap: 10px;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
 .main-container {
@@ -132,6 +142,34 @@ body {
     font-size: larger;
     font-weight: 400;
     justify-content: center;
+}
+
+.darkmode {
+    background-image: url(img/darkmode.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #141E30;
+    background-color: -webkit-linear-gradient(to bottom, #243B55, #141E30);
+    background-color: linear-gradient(to bottom, #243B55, #141E30);
+}
+
+.lightmode {
+    background-image: url(img/lightmode.png);
+    background-size: cover;
+    background-color: rgb(240, 240, 240);
+    outline: 1px solid rgb(233, 233, 233);
+}
+
+.download {
+    background-image: url(img/download.png);
+    background-size: cover;
+    background-color: #1967D2;
+}
+
+.copy {
+    background-image: url(img/copy.png);
+    background-size: cover;
+    background-color: #1967D2;
 }
 
 .code-section {
