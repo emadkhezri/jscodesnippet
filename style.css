@@ -227,9 +227,17 @@ pre {
     grid-column: 1;
 }
 
+.plus-sign {
+    grid-row: 2;
+}
+
 .vertical-toolbar.theme-mode {
     grid-row: 3;
     grid-column: 1;
+}
+
+.equal-sign {
+    grid-row: 4;
 }
 
 .vertical-toolbar.action-buttons {
