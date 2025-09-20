@@ -72,9 +72,8 @@ body {
 }
 
 .toolbar {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+    display: grid;
+    gap: 10px 5px;
 }
 
 .vertical-toolbar {
@@ -135,7 +134,8 @@ body {
     background: linear-gradient(to bottom, #799F0C, #FFE000);
 }
 
-.plus-sign {
+.plus-sign,
+.equal-sign {
     display: flex;
     font-size: larger;
     font-weight: 400;
@@ -220,4 +220,55 @@ pre {
     font-size: medium;
     white-space: pre-wrap;
     padding: 2% 5%;
+}
+
+.vertical-toolbar.color-picker {
+    grid-row: 1;
+    grid-column: 1;
+}
+
+.vertical-toolbar.theme-mode {
+    grid-row: 3;
+    grid-column: 1;
+}
+
+.vertical-toolbar.action-buttons {
+    grid-row: 5;
+    grid-column: 1;
+}
+
+.vertical-label.action-buttons {
+    grid-row: 5;
+    grid-column: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: small;
+    color: gray;
+    padding: 10px;
+}
+
+.vertical-label.action-buttons div {
+    display: flex;
+    flex-grow: 1;
+    min-width: 120px;
+    align-items: center;
+}
+
+.vertical-label.theme-mode {
+    grid-row: 3;
+    grid-column: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: small;
+    color: gray;
+    padding: 10px;
+}
+
+.vertical-label.theme-mode div {
+    display: flex;
+    flex-grow: 1;
+    min-width: 100px;
+    align-items: center;
 }
