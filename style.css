@@ -1,12 +1,8 @@
-* {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
 body {
     background: #ADA996;
     background: -webkit-linear-gradient(to bottom, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996);
     background: linear-gradient(to bottom, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996);
-
+    font-family: Helvetica, Verdana, Geneva;
 }
 
 body {
@@ -32,7 +28,6 @@ body {
 .banner span {
     color: black;
     font-size: 30px;
-    font-family: Helvetica, Verdana, Geneva;
 }
 
 .banner span {
@@ -179,7 +174,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    background-color: rgba(55, 65, 81, 0.8);
+    background-color: rgba(55, 65, 81, 0.9);
     height: 400px;
     width: 600px;
     border-radius: 10px;
@@ -202,6 +197,7 @@ body {
     flex-grow: 1;
     color: white;
     overflow: auto;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 textarea {
@@ -225,6 +221,7 @@ pre {
     font-size: medium;
     white-space: pre-wrap;
     padding: 2% 5%;
+    line-height: 20px;
 }
 
 .vertical-toolbar.color-picker {
