@@ -4,7 +4,7 @@ codeInput.addEventListener("input", function () {
     codePreview.innerHTML = hljs.highlight(codeInput.value, { language: "javascript" }).value;
 });
 
-function changeBackground(background) {
+function changeBackground(event) {
     const mainContainer = document.getElementById("main-container");
-    mainContainer.className = background
+    mainContainer.className = event.target.classList[1]
 }
