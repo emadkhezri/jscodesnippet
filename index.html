@@ -17,7 +17,7 @@
         <div class="tagline">A quick tool for sharing your code snippets with personality. Made by Emad. ✌️</div>
     </div>
     <div class="middle">
-        <div class="main-container">
+        <div id="main-container" class="gradient1">
             <div class="code-section">
                 <div class="code-window-header">code.js</div>
                 <div class="code-edit">
@@ -28,12 +28,12 @@
         </div>
         <div class="toolbar">
             <div class="vertical-toolbar color-picker">
-                <div class="bgcolor-selector gradient1"></div>
-                <div class="bgcolor-selector gradient2"></div>
-                <div class="bgcolor-selector gradient3"></div>
-                <div class="bgcolor-selector gradient4"></div>
-                <div class="bgcolor-selector gradient5"></div>
-                <div class="bgcolor-selector gradient6"></div>
+                <div class="bgcolor-selector gradient1" onclick="changeBackground('gradient1')"></div>
+                <div class="bgcolor-selector gradient2" onclick="changeBackground('gradient2')"></div>
+                <div class="bgcolor-selector gradient3" onclick="changeBackground('gradient3')"></div>
+                <div class="bgcolor-selector gradient4" onclick="changeBackground('gradient4')"></div>
+                <div class="bgcolor-selector gradient5" onclick="changeBackground('gradient5')"></div>
+                <div class="bgcolor-selector gradient6" onclick="changeBackground('gradient6')"></div>
             </div>
             <div class="plus-sign">
                 +
@@ -64,13 +64,7 @@
         <a href="https://icons8.com"><img width="15px" src="img/logo-icon8.svg" /></a>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
-    <script>
-        var codeInput = document.getElementById("codeInput");
-        var codePreview = document.getElementById("codePreview");
-        codeInput.addEventListener("input", function () {
-            codePreview.innerHTML = hljs.highlight(codeInput.value, { language: "javascript" }).value;
-        });
-    </script>
+    <script src="script.js"></script>
 </body>
 
 </html>
