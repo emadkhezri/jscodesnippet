@@ -93,6 +93,10 @@ body {
     box-shadow: 0px 2px 10px;
 }
 
+.bgcolor-selector.active {
+    outline: 3px solid rgb(183, 183, 183);
+}
+
 .gradient1 {
     background: #9198e5;
     background: -webkit-linear-gradient(#e66465, #9198e5);
@@ -224,7 +228,7 @@ pre {
     line-height: 20px;
 }
 
-.vertical-toolbar.color-picker {
+#color-picker {
     grid-row: 1;
     grid-column: 1;
 }
