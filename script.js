@@ -22,3 +22,13 @@ function changeBackground(event) {
         }
     }
 }
+
+function download() {
+    var elementToCapture = document.querySelector("#main-container");
+    html2canvas(elementToCapture).then(function (canvas) {
+        const link = document.createElement("a");
+        link.href = canvas.toDataURL("image/png");
+        link.download = "code.png";
+        link.click();
+    })
+}
