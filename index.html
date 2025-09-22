@@ -12,20 +12,30 @@
 </head>
 
 <body>
-    <div class="banner">
-        <h1>Share your beautiful code, <span>beautifully.</span></h1>
-        <div class="tagline">A quick tool for sharing your code snippets with personality. Made by Emad. ✌️</div>
-    </div>
-    <div class="middle">
-        <div id="main-container" class="gradient1">
-            <div class="code-section">
-                <div class="code-window-header">code.js</div>
-                <div class="code-edit">
-                    <pre spellcheck="false" id="codePreview" class="language-javascript"></pre>
-                    <textarea id="codeInput" placeholder="Enter your code here..."></textarea>
+    <div class="left-side"></div>
+    <div class="center-side">
+        <div class="header">
+            <h1>Share your beautiful code, <span>beautifully.</span></h1>
+            <div class="tagline">A quick tool for sharing your code snippets with personality. Made by Emad. ✌️</div>
+        </div>
+        <div class="middle">
+            <div id="main-container" class="gradient1">
+                <div class="code-section">
+                    <div class="code-window-header">code.js</div>
+                    <div class="code-edit">
+                        <pre spellcheck="false" id="codePreview" class="language-javascript"></pre>
+                        <textarea id="codeInput" placeholder="Enter your code here..."></textarea>
+                    </div>
                 </div>
             </div>
         </div>
+        <div class="footer">
+            <span style="margin: 2px;">Icons by</span>
+            <a href="https://icons8.com"><img width="15px" src="img/logo-icon8.svg" /></a>
+        </div>
+    </div>
+    <div class="right-side">
+
         <div class="toolbar">
             <div id="color-picker" class="vertical-toolbar">
                 <div class="bgcolor-selector gradient1 active" onclick="changeBackground(event)"></div>
@@ -58,10 +68,6 @@
                 <div>Copy to clipboard</div>
             </div>
         </div>
-    </div>
-    <div class="footer">
-        <span style="margin: 2px;">Icons by</span>
-        <a href="https://icons8.com"><img width="15px" src="img/logo-icon8.svg" /></a>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
     <script src="script.js"></script>

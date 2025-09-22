@@ -3,34 +3,39 @@ body {
     background: -webkit-linear-gradient(to bottom, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996);
     background: linear-gradient(to bottom, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996);
     font-family: Helvetica, Verdana, Geneva;
-}
-
-body {
     display: flex;
-    flex-direction: column;
     min-height: 100vh;
-    justify-content: flex-start;
-    align-items: center;
-    margin: auto;
-    box-sizing: border-box;
-}
-
-.banner {
-    display: flex;
-    flex-direction: column;
-    flex-grow: 0;
-    min-height: 200px;
     justify-content: center;
     align-items: center;
+    box-sizing: border-box;
+    gap: 20px;
 }
 
-.banner h1,
-.banner span {
+.left-side,
+.right-side {
+    min-width: 200px;
+}
+
+.center-side {
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 200px;
+}
+
+.header h1,
+.header span {
     color: black;
     font-size: 30px;
 }
 
-.banner span {
+.header span {
     font-weight: 100;
 }
 
@@ -42,15 +47,18 @@ body {
 .middle {
     display: flex;
     gap: 20px;
+    flex-grow: 1;
 }
 
 .footer {
-    min-height: 250px;
+    flex-grow: 1;
     display: flex;
     align-items: flex-end;
+    justify-content: center;
     gap: 10px;
     padding: 20px;
     box-sizing: border-box;
+    min-height: 200px;
 }
 
 #main-container {
@@ -67,6 +75,7 @@ body {
 
 .toolbar {
     display: grid;
+    grid-template-columns: 50px 1fr;
     gap: 10px 5px;
 }
 
@@ -265,7 +274,6 @@ pre {
 .vertical-label.action-buttons div {
     display: flex;
     flex-grow: 1;
-    min-width: 120px;
     align-items: center;
 }
 
@@ -287,6 +295,5 @@ bgcolor-selector download:hover+.vertical-label.action-buttons {
 .vertical-label.theme-mode div {
     display: flex;
     flex-grow: 1;
-    min-width: 100px;
     align-items: center;
 }
