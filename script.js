@@ -27,8 +27,32 @@ function download() {
     var elementToCapture = document.querySelector("#main-container");
     html2canvas(elementToCapture).then(function (canvas) {
         const link = document.createElement("a");
-        link.href = canvas.toDataURL("image/png");
+        link.href = canvas.toDataURL();
         link.download = "code.png";
         link.click();
     })
+}
+
+function copyToClipboard() {
+    const elementToCapture = document.querySelector("#main-container");
+
+    html2canvas(elementToCapture).then(canvas => {
+        const blobPromise = new Promise(resolve => {
+            canvas.toBlob(blob => {
+                resolve(blob);
+            }, "image/png");
+        });
+
+        const clipboardItem = new ClipboardItem({
+            "image/png": blobPromise
+        });
+
+        navigator.clipboard.write([clipboardItem])
+            .then(() => {
+                console.log("Image copied to clipboard successfully! 👍");
+            })
+            .catch(err => {
+                console.error("Failed to copy image: ", err);
+            });
+    });
 }
