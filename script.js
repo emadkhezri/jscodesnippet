@@ -49,10 +49,16 @@ function copyToClipboard() {
 
         navigator.clipboard.write([clipboardItem])
             .then(() => {
-                console.log("Image copied to clipboard successfully! 👍");
+                const messages = document.getElementById("messages");
+                messages.innerHTML = "Image copied to clipboard successfully! 👍";
+                messages.className = "showing"
+                setTimeout(() => { messages.className = "" }, 2000);
             })
             .catch(err => {
-                console.error("Failed to copy image: ", err);
+                const messages = document.getElementById("messages");
+                messages.innerHTML = "Failed to copy image: ", err;
+                messages.className = "showing"
+                setTimeout(() => { messages.className = "" }, 2000);
             });
     });
 }
