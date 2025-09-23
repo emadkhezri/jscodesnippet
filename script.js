@@ -50,7 +50,7 @@ function copyToClipboard() {
         navigator.clipboard.write([clipboardItem])
             .then(() => {
                 const messages = document.getElementById("messages");
-                messages.innerHTML = "Image copied to clipboard successfully! 👍";
+                messages.innerHTML = "Copied to clipboard successfully! 👍";
                 messages.className = "showing"
                 setTimeout(() => { messages.className = "" }, 2000);
             })
