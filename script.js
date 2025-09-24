@@ -23,6 +23,14 @@ function changeBackground(event) {
     }
 }
 
+function goDark() {
+    document.body.classList.add("dark")
+}
+
+function goLight() {
+    document.body.classList.remove("dark")
+}
+
 function download() {
     // show message to start download
     const messages = document.getElementById("messages");
