@@ -143,15 +143,18 @@ body.dark {
     padding: 15px;
     box-sizing: border-box;
     border-radius: 50px;
+    transition: padding ease 0.5s;
 }
 
 .bgcolor-selector:hover {
     outline: 2px solid white;
+    padding: 20px;
     box-shadow: 0px 2px 10px;
 }
 
 .bgcolor-selector.active {
     outline: 3px solid rgb(183, 183, 183);
+    padding: 20px;
 }
 
 .gradient1 {
