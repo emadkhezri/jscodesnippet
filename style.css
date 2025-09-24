@@ -1,6 +1,7 @@
 :root {
     --bg-color: #F9F9F9;
     --text-color: rgb(33, 33, 33);
+    --bg-color-code: rgba(249, 249, 249, 0.9);
     --box-shadow-color: gray;
     --speed: 1s;
     font-family: Helvetica, Verdana, Geneva;
@@ -20,6 +21,7 @@ body {
 
 body.dark {
     --bg-color: #36404b;
+    --bg-color-code: rgba(54, 64, 75, 0.9);
     --text-color: white;
     --box-shadow-color: #282f37;
 }
@@ -233,7 +235,7 @@ body.dark {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    background-color: rgba(55, 65, 81, 0.9);
+    background-color: var(--bg-color-code);
     height: 400px;
     width: 600px;
     border-radius: 10px;
@@ -254,7 +256,6 @@ body.dark {
 .code-edit {
     display: grid;
     flex-grow: 1;
-    color: white;
     overflow: auto;
     font-family: 'Courier New', Courier, monospace;
 }
