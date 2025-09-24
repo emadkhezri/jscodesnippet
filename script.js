@@ -24,6 +24,12 @@ function changeBackground(event) {
 }
 
 function download() {
+    // show message to start download
+    const messages = document.getElementById("messages");
+    messages.innerHTML = '<span class="download" style="min-width: 40px; height: 40px;"></span>Downloading...';
+    messages.className = "showing"
+    setTimeout(() => { messages.className = "" }, 2000);
+
     var elementToCapture = document.querySelector("#main-container");
     html2canvas(elementToCapture).then(function (canvas) {
         const link = document.createElement("a");
@@ -50,15 +56,12 @@ function copyToClipboard() {
         navigator.clipboard.write([clipboardItem])
             .then(() => {
                 const messages = document.getElementById("messages");
-                messages.innerHTML = "Copied to clipboard successfully! 👍";
+                messages.innerHTML = '<span class="copy" style="min-width: 40px; height: 40px;"></span>Successfully copied to clipboard!';
                 messages.className = "showing"
                 setTimeout(() => { messages.className = "" }, 2000);
             })
             .catch(err => {
-                const messages = document.getElementById("messages");
-                messages.innerHTML = "Failed to copy image: ", err;
-                messages.className = "showing"
-                setTimeout(() => { messages.className = "" }, 2000);
+                console.log("failed to copy to clipboard. Error: " + err)
             });
     });
 }

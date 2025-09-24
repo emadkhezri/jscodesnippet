@@ -1,7 +1,5 @@
 body {
-    background: #ADA996;
-    background: -webkit-linear-gradient(to bottom, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996);
-    background: linear-gradient(to bottom, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996);
+    background: #F9F9F9;
     font-family: Helvetica, Verdana, Geneva;
     display: flex;
     min-height: 100vh;
@@ -62,10 +60,19 @@ body {
     min-height: 200px;
 }
 
-#messages {
+.message-container {
     flex-grow: 1;
-    color: gray;
-    font-size: larger;
+}
+
+#messages {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: white;
+    background-color: #1967D2;
+    font-size: small;
+    padding: 5px 20px;
+    border-radius: 40px;
     font-weight: 100;
     opacity: 0;
 }
