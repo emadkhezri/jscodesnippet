@@ -246,14 +246,50 @@ body.dark {
 }
 
 .code-window-header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    padding: 5px 10px;
     border-radius: 10px 10px 0px 0px;
     background-color: rgba(45, 51, 63, 0.9);
     color: rgb(189, 188, 188);
     font-size: small;
-    min-height: 30px;
+}
+
+.code-window-header>.buttons {
+    display: flex;
+    grid-row: 1;
+    grid-column: 1;
+}
+
+.code-file-name {
+    flex-grow: 1;
+    display: flex;
+    grid-row: 1;
+    grid-column: 1;
+    justify-content: center;
+}
+
+.close-button {
+    background-color: #EC6A5E;
+    padding: 5px;
+    margin: 4px;
+    border-radius: 5px;
+    flex-grow: 0;
+}
+
+.minimize-button {
+    background-color: #F4BF4F;
+    padding: 5px;
+    margin: 4px;
+    border-radius: 5px;
+    flex-grow: 0;
+}
+
+.fullscreen-button {
+    background-color: #61C554;
+    padding: 5px;
+    margin: 4px;
+    border-radius: 5px;
+    flex-grow: 0;
 }
 
 .code-edit {
