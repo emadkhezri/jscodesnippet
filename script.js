@@ -25,10 +25,14 @@ function changeBackground(event) {
 
 function goDark() {
     document.body.classList.add("dark")
+    document.getElementById("darkButton").classList.add("active")
+    document.getElementById("lightButton").classList.remove("active")
 }
 
 function goLight() {
     document.body.classList.remove("dark")
+    document.getElementById("lightButton").classList.add("active")
+    document.getElementById("darkButton").classList.remove("active")
 }
 
 function download() {
