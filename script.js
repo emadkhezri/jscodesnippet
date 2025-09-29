@@ -1,6 +1,9 @@
 // Configure the code highlighter
 var codeInput = document.getElementById("codeInput");
 var codePreview = document.getElementById("codePreview");
+// set the preview default value
+codePreview.innerHTML = hljs.highlight(codeInput.value, { language: "javascript" }).value;
+// set the delegate on changing the input
 codeInput.addEventListener("input", function () {
     codePreview.innerHTML = hljs.highlight(codeInput.value, { language: "javascript" }).value;
 });

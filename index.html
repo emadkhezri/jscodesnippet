@@ -31,7 +31,21 @@
                     </div>
                     <div class="code-edit">
                         <pre spellcheck="false" id="codePreview" class="language-javascript"></pre>
-                        <textarea id="codeInput" placeholder="Enter your code here..."></textarea>
+                        <textarea id="codeInput" placeholder="Enter your code here...">// A list of popular programming languages
+const languages = [
+  { name: 'JavaScript', paradigm: 'Multi-paradigm', year: 1995 },
+  { name: 'Python', paradigm: 'Object-Oriented', year: 1991 },
+  { name: 'Rust', paradigm: 'Multi-paradigm', year: 2010 },
+  { name: 'Lisp', paradigm: 'Functional', year: 1958 },
+];
+
+// Let's create a "beautiful" list of modern languages
+const modernLanguages = languages
+  .filter(lang => lang.year > 1992)
+  .map(lang => `${lang.name} (${lang.paradigm})`);
+
+console.log('✨ A beautiful list of modern languages:');
+console.log(modernLanguages);</textarea>
                     </div>
                 </div>
             </div>
